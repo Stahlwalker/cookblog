@@ -3,3 +3,21 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+body {
+
+    background-color: #ffc20e;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.5rem;
+}
+
+.blog-preview-image {
+    border-radius: 10px;
+}
