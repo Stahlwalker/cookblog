@@ -30,7 +30,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Stahlwalker Cookbook {CMS_NAME}
+                  {post.title} | Stahlwalker Cookbook
                 </title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>

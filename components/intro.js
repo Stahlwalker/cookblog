@@ -12,7 +12,7 @@ export default function Intro() {
       <img src="/images/starwars_egg_cropped.jpg" layout="fill" alt=""></img>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         May the FOOD be with you{' '}
-        <i class="fas fa-journal-whills"></i>
+        <i className="fas fa-journal-whills"></i>
       </h4>
       </div>
       

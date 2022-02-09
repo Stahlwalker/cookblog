@@ -18,7 +18,7 @@ export default function Index({ preview, allPosts }) {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"></link>
-          <title>Stahlwalker Cookbook {CMS_NAME}</title>
+          <title>Stahlwalker Cookbook</title>
         </Head>
         <Container>
           <Intro />
