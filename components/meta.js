@@ -39,7 +39,7 @@ export default function Meta() {
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@LucasStahl11" />
+      <meta name="twitter:site" content="https://cookblog.vercel.app/" />
       <meta name="twitter:creator" content="@LucasStahl11" />
       <meta name="twitter:title" content="Stahlwalker Cookbook" />
       <meta name="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
