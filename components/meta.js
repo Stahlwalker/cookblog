@@ -38,7 +38,7 @@ export default function Meta() {
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 
-      <meta name="twitter:card" content="summary large image" />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@LucasStahl11" />
       <meta name="twitter:creator" content="@LucasStahl11" />
       <meta property="twitter:title" content="Stahlwalker Cookbook" />
