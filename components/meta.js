@@ -38,13 +38,12 @@ export default function Meta() {
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 
-      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:card" content="summary large image" />
       <meta name="twitter:site" content="@LucasStahl11" />
       <meta name="twitter:creator" content="@LucasStahl11" />
-      <meta property="og:url" content="https://cookblog.vercel.app/" />
-      <meta property="og:title" content="Stahlwalker Cookbook" />
-      <meta property="og:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
-      <meta property="og:image" content='<img src="/images/starwars_egg_cropped.jpg" layout="fill" alt=""></img>'/>
+      <meta property="twitter:title" content="Stahlwalker Cookbook" />
+      <meta property="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
+      <meta property="twitter:image" content='<img src="/images/starwars_egg_cropped.jpg" layout="fill" alt=""></img>'/>
 
     </Head>
   )
