@@ -43,8 +43,8 @@ export default function Meta() {
       <meta name="twitter:creator" content="@LucasStahl11" />
       <meta name="twitter:title" content="Stahlwalker Cookbook" />
       <meta name="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
-      <meta name="twitter:image" content='<img src="/images/starwarssocialfinal.jpg"></img>'/>
+      <meta name="twitter:image" content='<img src="/public/images/starwarssocialfinal.jpg"></img>'/>
 
-    </Head>
+      </Head>
   )
 }
