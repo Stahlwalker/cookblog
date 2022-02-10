@@ -38,12 +38,18 @@ export default function Meta() {
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
 
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@LucasStahl11" />
       <meta name="twitter:creator" content="@LucasStahl11" />
-      <meta name="twitter:title" content="Stahlwalker Cookbook" />
-      <meta name="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
-      <meta name="twitter:image" content='<img src="http://cdn.wallpapername.com/1440x900/20121101/star%20wars%20minimalistic%20yellow%20darth%20vader%20egg%20spoon%201440x900%20wallpaper_www.wallpapername.com_32.jpg"></img>'/>
+      <meta property="twitter:title" content="Stahlwalker Cookbook" />
+      <meta property="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
+      <meta property="twitter:image" content='<img src="/images/starwarssocialfinal.jpg"></img>'/>
+
+
+      {/* <meta property="og:url" content="http://bits.blogs.nytimes.com/2011/12/08/a-twitter-for-my-sister/" />
+      <meta property="og:title" content="A Twitter for My Sister" />
+      <meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />
+      <meta property="og:image" content="http://graphics8.nytimes.com/images/2011/12/08/technology/bits-newtwitter/bits-newtwitter-tmagArticle.jpg" /> */}
 
       </Head>
   )
