@@ -4,6 +4,8 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+/* @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap'); */
+
 body {
 
     background-color: #ffc20e;
@@ -29,6 +31,6 @@ body {
 
 article ul {
     list-style-type: disc;
-    margin-left: 2.5rem;
-    line-height: 1px;
+    margin-left: 1.5rem;
+    line-height: 18px;
 }
