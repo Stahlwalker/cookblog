@@ -27,7 +27,7 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article>
+            <article className="article">
               <Head>
                 <title>
                   {post.title} | Stahlwalker Cookbook
@@ -37,6 +37,7 @@ export default function Post({ post, morePosts, preview }) {
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
+                foodCategory={post.foodCategory}
                 date={post.date}
                 author={post.author}
               />
