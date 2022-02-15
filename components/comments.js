@@ -2,8 +2,8 @@ import {DiscussionEmbed} from "disqus-react"
 const DisqusComments = ({ post }) => {
   const disqusShortname = "stahlwalkercookbook"
   const disqusConfig = {
-    url: "https://your-site-url/post-slug",
-    identifier: post.id, // Single post id
+    url: `https://cookblog.vercel.app/posts/${post.slug}`,
+    identifier: post.slug, // Single post id
     title: post.title // Single post title
   }
   return (
