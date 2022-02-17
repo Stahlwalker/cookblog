@@ -59,7 +59,7 @@ export default function Meta() {
       <meta property="og:url" content="https://cookblog.vercel.app/"/>
       <meta property="og:image" content="https://cookblog.vercel.app/images/starwarssocialfinal.jpg"/>
       <meta property="og:site_name" content="Stahlwalker"/>
-      <meta property="fb:app_id" content="51134710437125"/>
+      <meta property="fb:app_id" content="511134710437125"/>
       <meta property="og:description" content="A blog dedicated to cooking up recipes for all those far far and away."/>
 
       </Head>
