@@ -54,4 +54,6 @@ article ul {
 
 .social {
     text-align: center;
+    display: block;
+
 }
