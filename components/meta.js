@@ -46,7 +46,7 @@ export default function Meta() {
       <meta property="twitter:image" content="https://cookblog.vercel.app/images/starwarssocialfinal.jpg"/>
 
   
-      <meta content="511134710437125" property="fb:app_id" />
+      {/* <meta content="51134710437125" property="fb:app_id" /> */}
       {/* <meta content="Stahlwalker" property="og:site_name" />
       <meta content="Stahlwalker" property="og:title" />
       <meta content="article" property="og:type" />
@@ -54,7 +54,13 @@ export default function Meta() {
       <meta content="https://stahlwalker.org/" property="og:url" />
       <meta content="https://cdn.dribbble.com/users/571141/screenshots/3549732/untitled-1_1x.jpg" property="og:image" /> */}
 
-
+      <meta property="og:title" content="Stahlwalker Cookbook"/>
+      <meta property="og:type" content="article"/>
+      <meta property="og:url" content="https://cookblog.vercel.app/"/>
+      <meta property="og:image" content="https://cookblog.vercel.app/images/starwarssocialfinal.jpg"/>
+      <meta property="og:site_name" content="Stahlwalker"/>
+      <meta property="fb:app_id" content="51134710437125"/>
+      <meta property="og:description" content="A blog dedicated to cooking up recipes for all those far far and away."/>
 
       </Head>
   )
