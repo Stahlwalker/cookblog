@@ -12,6 +12,21 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import { CMS_NAME } from '../../lib/constants'
 import Comments from '../../components/comments'
+import React from 'react'
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  PinterestShareButton,
+  TwitterShareButton,
+  TwitterIcon,
+  PinterestIcon,
+  RedditShareButton,
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from 'next-share';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -44,6 +59,27 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.content} />
             </article>
+            <h2>Looks tasty, share with friends</h2>
+            <FacebookShareButton
+                    url={'https://cookblog.vercel.app/'} >
+                    <FacebookIcon size={32} round />
+                  </FacebookShareButton>
+                  <TwitterShareButton
+                    url={'https://cookblog.vercel.app/'} >
+                    <TwitterIcon size={32} round />
+                  </TwitterShareButton>
+                  <RedditShareButton
+                    url={'https://cookblog.vercel.app/'} >
+                    <RedditIcon size={32} round />
+                  </RedditShareButton>
+                  <WhatsappShareButton
+                    url={'https://cookblog.vercel.app/'} >
+                    <WhatsappIcon size={32} round />
+                  </WhatsappShareButton>
+                  <LinkedinShareButton
+                    url={'https://cookblog.vercel.app/'} >
+                    <LinkedinIcon size={32} round />
+                  </LinkedinShareButton>
             <Comments
               post={post}
             />
