@@ -6,11 +6,13 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import LatestPost from '@components/latestpost'
 
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
+  // const [posts, setPosts] = useState(props.posts);
   return (
     <>
       <Layout preview={preview}>
@@ -33,7 +35,22 @@ export default function Index({ preview, allPosts }) {
             />
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+
+          {/* <button
+            onClick={async () => {
+              const newPosts = await getNewPostsFromApi();
+
+              setPosts(...morePosts, ...newPosts);
+            }}
+            type="button"
+          >
+          Load more
+          </button> */}
+
         </Container>
+
+        
+
       </Layout>
     </>
   )
