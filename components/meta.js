@@ -45,6 +45,17 @@ export default function Meta() {
       <meta name="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
       <meta property="twitter:image" content="https://cookblog.vercel.app/images/starwarssocialfinal.jpg"/>
 
+  
+      <meta content="511134710437125" property="fb:app_id" />
+      {/* <meta content="Stahlwalker" property="og:site_name" />
+      <meta content="Stahlwalker" property="og:title" />
+      <meta content="article" property="og:type" />
+      <meta content="Web design, digital marketing and a tech blog for web programmers." property="og:description" />
+      <meta content="https://stahlwalker.org/" property="og:url" />
+      <meta content="https://cdn.dribbble.com/users/571141/screenshots/3549732/untitled-1_1x.jpg" property="og:image" /> */}
+
+
+
       </Head>
   )
 }
