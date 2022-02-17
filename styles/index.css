@@ -51,3 +51,7 @@ article ul {
     display: inline-block;
     margin-bottom: 1.5rem;
 }
+
+.social {
+    text-align: center;
+}

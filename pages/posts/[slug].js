@@ -59,6 +59,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.content} />
             </article>
+            <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
                     url={'https://cookblog.vercel.app/'} >
@@ -80,6 +81,7 @@ export default function Post({ post, morePosts, preview }) {
                     url={'https://cookblog.vercel.app/'} >
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>
+                  </social>
             <Comments
               post={post}
             />
