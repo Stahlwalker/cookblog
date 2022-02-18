@@ -36,7 +36,7 @@ export default function Meta() {
         name="description"
         content={`A blog dedicated to cooking up recipes for all those far far and away.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@LucasStahl11" />
@@ -49,7 +49,7 @@ export default function Meta() {
       <meta property="og:title" content="Stahlwalker Cookbook"/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://cookblog.vercel.app/"/>
-      <meta property="og:image" content="https://cookblog.vercel.app/images/darth.jpg"/>
+      <meta property="og:image" content="https://cookblog.vercel.app/images/starwarssocialfinal.jpg"/>
       {/* <meta property="og:site_name" content="Stahlwalker"/> */}
       <meta property="fb:app_id" content="511134710437125"/>
       <meta property="og:description" content="A blog dedicated to cooking up recipes for all those far far and away."/>
