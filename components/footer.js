@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-accent-3 border-t border-accent-3">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
+        <div className="py-20 flex flex-col lg:flex-row items-center">
           <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             Stahlwalker
           </h3>
@@ -20,10 +20,30 @@ export default function Footer() {
               href={`https://github.com/Stahlwalker/cookblog`}
               className="mx-3 font-bold hover:underline"
             >
-              View on GitHub
+              View on <i className="fa fa-github"></i>
+              
             </a>
+   
+          
           </div>
+          
         </div>
+        <div className="socialicons">
+          <a
+              href="https://twitter.com/LucasStahl11/"
+              
+            >
+              <i className="fa fa-twitter"></i>
+            
+            </a>
+            <a
+              href="https://www.linkedin.com/in/lucasstahl/"
+              
+            >
+              <i className="fa fa-linkedin"></i>
+            
+            </a>
+            </div>
       </Container>
     </footer>
   )

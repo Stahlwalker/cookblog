@@ -57,3 +57,8 @@ article ul {
     display: block;
 
 }
+
+.socialicons {
+    text-align: center;
+    letter-spacing: 5px;
+}
