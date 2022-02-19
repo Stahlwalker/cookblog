@@ -13,8 +13,6 @@ import PostTitle from '../../components/post-title'
 import { CMS_NAME } from '../../lib/constants'
 import Comments from '../../components/comments'
 import React from 'react'
-import {POST_URL} from '../../lib/constants'
-import { URL } from '../../lib/constants'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -65,7 +63,7 @@ export default function Post({ post, morePosts, preview }) {
             <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
-                    url={POST_URL} >
+                    url={'https://cookblog.vercel.app/'} >
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
                   <TwitterShareButton
