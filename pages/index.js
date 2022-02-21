@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-
+// import React, { useState, useEffect } from "react"
 
 
 export default function Index({ preview, allPosts }) {
@@ -42,7 +42,7 @@ export default function Index({ preview, allPosts }) {
 
           {/* <button
             onClick={async () => {
-              const newPosts = await getNewPostsFromApi();
+              const newPosts = await getAllPostsForHome();
 
               setPosts(...morePosts, ...newPosts);
             }}
