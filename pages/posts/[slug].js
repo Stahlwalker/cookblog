@@ -65,7 +65,7 @@ export default function Post({ post, morePosts, preview }) {
             <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
-                    url={POST_URL} >
+                    url={'https://cookblog.vercel.app/'} >
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
                   <TwitterShareButton
