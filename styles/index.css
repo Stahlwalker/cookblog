@@ -63,11 +63,6 @@ article ul {
     letter-spacing: 5px;
 }
 
-/* circle .RedditIcon {
-    fill: #ff4500;
-} */
-
-
 .redditSocial circle {
     fill: #ff4500;
 }
@@ -75,7 +70,3 @@ article ul {
 .redditSocial {
     display: inline;
 }
-
-/* svg {
-    background-color: blue;
-} */
