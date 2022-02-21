@@ -62,3 +62,20 @@ article ul {
     text-align: center;
     letter-spacing: 5px;
 }
+
+/* circle .RedditIcon {
+    fill: #ff4500;
+} */
+
+
+.redditSocial circle {
+    fill: #ff4500;
+}
+
+.redditSocial {
+    display: inline;
+}
+
+/* svg {
+    background-color: blue;
+} */

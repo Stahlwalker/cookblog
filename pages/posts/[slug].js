@@ -10,7 +10,9 @@ import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
-import { CMS_NAME } from '../../lib/constants'
+// import { CMS_NAME } from '../../lib/constants'
+// import { URL } from '../../lib/constants'
+// import { POST_URL } from '../../lib/constants'
 import Comments from '../../components/comments'
 import React from 'react'
 import {
@@ -70,10 +72,12 @@ export default function Post({ post, morePosts, preview }) {
                     url={'https://cookblog.vercel.app/'} >
                     <TwitterIcon size={32} round />
                   </TwitterShareButton>
+                  <div className="redditSocial">
                   <RedditShareButton
                     url={'https://cookblog.vercel.app/'} >
                     <RedditIcon size={32} round />
                   </RedditShareButton>
+                  </div>
                   <WhatsappShareButton
                     url={'https://cookblog.vercel.app/'} >
                     <WhatsappIcon size={32} round />
