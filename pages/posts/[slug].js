@@ -65,25 +65,25 @@ export default function Post({ post, morePosts, preview }) {
             <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
-                    url={'https://cookblog.vercel.app/'} >
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
                   <TwitterShareButton
-                    url={'https://cookblog.vercel.app/'} >
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <TwitterIcon size={32} round />
                   </TwitterShareButton>
                   <div className="redditSocial">
                   <RedditShareButton
-                    url={'https://cookblog.vercel.app/'} >
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <RedditIcon size={32} round />
                   </RedditShareButton>
                   </div>
                   <WhatsappShareButton
-                    url={'https://cookblog.vercel.app/'} >
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <WhatsappIcon size={32} round />
                   </WhatsappShareButton>
                   <LinkedinShareButton
-                    url={'https://cookblog.vercel.app/'} >
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>
                   </social>
