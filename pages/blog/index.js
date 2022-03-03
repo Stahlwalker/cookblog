@@ -1,19 +1,16 @@
 import Container from '../../components/container'
 import MoreStories from '../../components/more-stories'
-import HeroPost from '../../components/hero-post'
-import Intro from '../../components/intro'
 import Layout from '../../components/layout'
 import { getAllPostsForHome, getPaginatedPostSummaries } from '../../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-// import React, { useState, useEffect } from "react"
+import PostList from '../../components/PostList'
 
 
-export default function Index({ preview, allPosts, postSummaries }) {
+export default function Index({ preview, allPosts, postSummaries, totalPages, currentPage}) {
   const postNumber = allPosts.length
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
-  // const [posts, setPosts] = useState(props.posts);
+ 
   return (
     <>
       <Layout preview={preview}>
@@ -30,30 +27,15 @@ export default function Index({ preview, allPosts, postSummaries }) {
         <Container>
         {postNumber}
         {postSummaries} blog
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
         
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
 
-          {/* <button
-            onClick={async () => {
-              const newPosts = await getAllPostsForHome();
+          <PostList 
+            posts={postSummaries} 
+            totalPages={totalPages}
+            currentPage={currentPage}
+       />
 
-              setPosts(...morePosts, ...newPosts);
-            }}
-            type="button"
-          >
-          Load more
-          </button> */}
 
         </Container>
 
@@ -67,6 +49,10 @@ export default function Index({ preview, allPosts, postSummaries }) {
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllPostsForHome(preview)) ?? []
   const postSummaries = (await getPaginatedPostSummaries(1)) ?? []
+
+  //the problem is getPaginatedPostSummaries is not returning the anything
+
+  console.log(`postSummaries:${postSummaries}`)
   const totalPages = Math.ceil(postSummaries.total / 2);
   return {
     props: { preview, allPosts, postSummaries, totalPages, currentPage: "1", },
