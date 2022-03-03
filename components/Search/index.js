@@ -16,7 +16,7 @@ export default function Search() {
     <>
       <InstantSearch 
         searchClient={searchClient} 
-        indexName="my_awesome_content">
+        indexName="cookblog">
         <CustomSearchBox />
         <CustomHits />
       </InstantSearch>
