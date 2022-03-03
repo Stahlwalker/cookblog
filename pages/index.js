@@ -6,14 +6,14 @@ import Layout from '../components/layout'
 import { getAllPostsForHome, getPaginatedPostSummaries } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-// import React, { useState, useEffect } from "react"
+import Search from "../components/Search";
+// import PostList from "../components/PostList";
 
 
 export default function Index({ preview, allPosts, postSummaries }) {
   const postNumber = allPosts.length
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
-  // const [posts, setPosts] = useState(props.posts);
   return (
     <>
       <Layout preview={preview}>
@@ -41,19 +41,13 @@ export default function Index({ preview, allPosts, postSummaries }) {
               excerpt={heroPost.excerpt}
             />
           )}
-        
+              <Search>
+                {/* <PostList posts={posts} /> */}
+              </Search> 
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
 
-          {/* <button
-            onClick={async () => {
-              const newPosts = await getAllPostsForHome();
 
-              setPosts(...morePosts, ...newPosts);
-            }}
-            type="button"
-          >
-          Load more
-          </button> */}
+              
 
         </Container>
 
