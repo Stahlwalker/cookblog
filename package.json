@@ -4,18 +4,25 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "postbuild": "node ./scripts/build-search.js",
     "setup": "node ./contentful/setup.js $CONTENTFUL_SPACE_ID $CONTENTFUL_MANAGEMENT_TOKEN"
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.4.0",
+    "algoliasearch": "^4.12.1",
     "classnames": "2.3.1",
     "date-fns": "2.28.0",
     "disqus-react": "^1.1.2",
+    "dotenv": "^16.0.0",
+    "instantsearch.js": "^4.39.0",
     "next": "latest",
     "next-share": "^0.13.0",
+    "node-fetch": "^2.6.7",
+    "node-require": "0.0.10",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-instantsearch-dom": "^6.22.0"
   },
   "devDependencies": {
     "autoprefixer": "10.2.6",
