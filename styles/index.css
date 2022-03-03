@@ -70,3 +70,16 @@ article ul {
 .redditSocial {
     display: inline;
 }
+
+input {
+    margin-left: 10px
+}
+
+ol,
+ul {
+    list-style: none;
+    margin-left: 25px;
+    margin-top: 10px;
+    /* background-color: black;
+    color: white; */
+}
