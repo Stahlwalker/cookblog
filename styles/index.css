@@ -75,13 +75,13 @@ input {
     margin-left: 10px
 }
 
-/* ol,
+ol,
 ul {
-    list-style: none;
-    margin-left: 25px;
-    margin-top: 10px;
-    /* background-color: black;
-    color: white; */
+    list-style: circle;
+    font-size: 13px;
+    margin-left: 2.5rem;
+}
+
 
 
 /* .ais-SearchBox {
