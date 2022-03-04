@@ -9,8 +9,9 @@ function SearchBox({ refine }) {
       <input
         id="algolia_search"
         type="search"
-        placeholder=" pasta"
+        placeholder=" pasta..."
         onChange={(e) => refine(e.currentTarget.value)}
+        onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
       />
     </form>
   );
