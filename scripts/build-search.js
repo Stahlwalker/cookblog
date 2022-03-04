@@ -36,6 +36,7 @@ const allPosts = `query {
       title
       date
       excerpt
+      foodCategory
     }
   }
 }`
@@ -50,6 +51,7 @@ function transformPostsToSearchObjects(posts) {
       excerpt: post.excerpt,
       slug: post.slug,
       date: post.date,
+      foodCategory: post.foodCategory,
     };
   });
 
