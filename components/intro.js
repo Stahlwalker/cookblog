@@ -1,6 +1,6 @@
 import { CMS_NAME, CMS_URL } from '../lib/constants'
 import ContentfulImage from './contentful-image'
-
+import Search from "../components/Search";
 
 export default function Intro() {
   return (
@@ -15,6 +15,9 @@ export default function Intro() {
         May the FOOD be with you {' '} 
         <i className="fas fa-jedi"></i>
       </h4>
+      <Search>
+                {/* <PostList posts={posts} /> */}
+              </Search> 
       </div>
       
     </section>

@@ -7,7 +7,7 @@ function Hits({ searchState, searchResults }) {
   return (
     <>
       {searchResults?.hits.length === 0 && validQuery && (
-        <p>Aw snap! No search results were found.</p>
+        <p>No results, keep cooking.</p>
       )}
       {searchResults?.hits.length > 0 && validQuery && (
         <ol>

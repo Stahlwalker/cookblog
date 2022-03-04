@@ -38,9 +38,7 @@ export default function Index({ preview, allPosts }) {
               excerpt={heroPost.excerpt}
             />
           )}
-              <Search>
-                {/* <PostList posts={posts} /> */}
-              </Search> 
+              
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
 
 

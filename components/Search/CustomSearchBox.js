@@ -5,7 +5,7 @@ import { connectSearchBox } from "react-instantsearch-dom";
 function SearchBox({ refine }) {
   return (
     <form action="" role="search">
-      <label htmlFor="algolia_search">Search</label>
+      <label htmlFor="algolia_search" type="submit">Search</label>
       <input
         id="algolia_search"
         type="search"
