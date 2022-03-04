@@ -38,6 +38,7 @@ article ul {
 
 .article ul li p {
     margin: 0;
+    font-size: 18px;
 
 }
 
@@ -75,6 +76,7 @@ input {
     margin-left: 10px
 }
 
+form,
 ol,
 ul {
     list-style: circle;
