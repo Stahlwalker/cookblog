@@ -14,6 +14,8 @@ import PostTitle from '../../components/post-title'
 import { URL } from '../../lib/constants'
 import { POST_URL } from '../../lib/constants'
 import Comments from '../../components/comments'
+import PrintComponent from '../../components/PrintComponent';
+
 import React from 'react'
 import {
   FacebookShareButton,
@@ -62,6 +64,9 @@ export default function Post({ post, morePosts, preview }) {
               />
               <PostBody content={post.content} />
             </article>
+            <>
+              <PrintComponent />
+              </>
             <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
@@ -97,6 +102,7 @@ export default function Post({ post, morePosts, preview }) {
           </>
         )}
       </Container>
+     
     </Layout>
   )
 }
@@ -120,3 +126,4 @@ export async function getStaticPaths() {
     fallback: true,
   }
 }
+
