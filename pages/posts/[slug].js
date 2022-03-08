@@ -15,7 +15,7 @@ import { URL } from '../../lib/constants'
 import { POST_URL } from '../../lib/constants'
 import Comments from '../../components/comments'
 import PrintComponent from '../../components/PrintComponent';
-import WakeLock from '../../components/wakeLock';
+import WakeLock from '../../components/WakeLock';
 
 import React from 'react'
 import {
