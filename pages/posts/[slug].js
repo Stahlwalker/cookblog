@@ -52,6 +52,7 @@ export default function Post({ post, morePosts, preview }) {
             <article className="article">
               <Head>
               <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet"></link>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <title>
                   {post.title} | Stahlwalker Cookbook
                 </title>

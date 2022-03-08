@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useWakeLock } from 'react-screen-wake-lock';
 
 function Component() {
@@ -11,10 +10,10 @@ function Component() {
 
   return (
     <div className="wake">
-      <p>
+      <p> 
         {/* Screen Wake: <b>{`${isSupported}`}</b> */}
         <br />
-        Screen lock status: <b>{`${released}`}</b>
+        <i className="fa fa-android"></i> Screen lock status: <b>{`${released}`}</b>
       </p>
       <button id="lock-button"
         type="button"
