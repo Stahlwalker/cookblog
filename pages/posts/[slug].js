@@ -99,6 +99,10 @@ export default function Post({ post, morePosts, preview }) {
                     <RedditIcon size={32} round />
                   </RedditShareButton>
                   </div>
+                  <PinterestShareButton
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
+                    <PinterestIcon size={32} round />
+                  </PinterestShareButton>
                   <WhatsappShareButton
                     url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <WhatsappIcon size={32} round />
