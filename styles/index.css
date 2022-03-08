@@ -161,7 +161,7 @@ button#print {
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,4 +208,9 @@ button#lock-button {
     justify-content: center;
     margin-bottom: 15px;
     margin-left: 15px;
+}
+
+
+a.mx-3.bg-black.hover\:bg-white.hover\:text-black.border.border-black.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
+    border-radius: 10px;
 }
