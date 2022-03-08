@@ -182,3 +182,30 @@ button#print.checkout:hover {
     align-items: center;
     justify-content: center;
 }
+
+.wake {
+    display: flex;
+    justify-content: center;
+    /* background-color: white; */
+    margin-bottom: 20px;
+}
+
+
+button#lock-button {
+    background-color: #050505;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}

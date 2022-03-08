@@ -15,6 +15,7 @@ import { URL } from '../../lib/constants'
 import { POST_URL } from '../../lib/constants'
 import Comments from '../../components/comments'
 import PrintComponent from '../../components/PrintComponent';
+import WakeLock from '../../components/wakeLock';
 
 import React from 'react'
 import {
@@ -31,6 +32,7 @@ import {
   LinkedinShareButton,
   LinkedinIcon,
 } from 'next-share';
+
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -62,11 +64,24 @@ export default function Post({ post, morePosts, preview }) {
                 date={post.date}
                 author={post.author}
               />
+                <WakeLock />
               <PostBody content={post.content} />
             </article>
             <>
               <PrintComponent />
               </>
+              {/* <WakeButton /> */}
+            
+
+              {/* <ReactNoSleep>
+              {({ isOn, enable, disable }) => (
+                <button onClick={isOn ? disable : enable}>
+                  {isOn ? 'on' : 'off'}
+                </button>
+              )}
+            </ReactNoSleep> */}
+
+
             <social className="social">
             <h2>Looks tasty, share with friends</h2>
             <FacebookShareButton
