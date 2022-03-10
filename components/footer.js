@@ -20,7 +20,7 @@ export default function Footer() {
               href={`https://github.com/Stahlwalker/cookblog`}
               className="mx-3 font-bold hover:underline"
             >
-              View on <i className="fa fa-github"></i>
+              View on <i aria-hidden className="fa fa-github"></i>
               
             </a>
    
@@ -33,14 +33,14 @@ export default function Footer() {
               href="https://twitter.com/LucasStahl11/"
               
             >
-              <i className="fa fa-twitter"></i>
+              <i aria-hidden className="fa fa-twitter"></i>
             
             </a>
             <a
               href="https://www.linkedin.com/in/lucasstahl/"
               
             >
-              <i className="fa fa-linkedin"></i>
+              <i aria-hidden className="fa fa-linkedin"></i>
             
             </a>
             </div>

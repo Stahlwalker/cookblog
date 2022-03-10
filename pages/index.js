@@ -39,9 +39,9 @@ export default function Index({ preview, allPosts }) {
             />
           )}
               
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} showMore={true} />}
 
-
+ 
               
 
         </Container>

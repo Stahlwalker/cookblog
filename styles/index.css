@@ -150,7 +150,8 @@ input#algolia_search {
     width: 100%;
 }
 
-button#print {
+.print,
+.load-more {
     background-color: #050505;
     border: none;
     color: white;
@@ -169,6 +170,10 @@ button#print {
 
 }
 
+.load-more {
+    margin: 0 auto 50px auto;
+}
+
 /* button#print.checkout {
     background-color: blue;
 }
@@ -177,7 +182,7 @@ button#print.checkout:hover {
     background-color: green;
 } */
 
-#printButton {
+.printButton {
     display: flex;
     align-items: center;
     justify-content: center;
