@@ -13,7 +13,7 @@ function Component() {
       <p> 
         {/* Screen Wake: <b>{`${isSupported}`}</b> */}
         <br />
-        <i className="fa fa-android"></i> Users screen lock status: <b>{`${released}`}</b>
+        <i aria-hidden className="fa fa-android"></i> Users screen lock status: <b>{`${released}`}</b>
       </p>
       <button id="lock-button"
         type="button"
