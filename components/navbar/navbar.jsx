@@ -9,18 +9,18 @@ export default function Navbar() {
                 <Link href="/">
                     <a className="navbar-brand">Stahlwalker</a>
                 </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </button>
+                </Button>
 
-                <div className="collapse navbar-collapse" id="navbarsExample07XL">
+                <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mr-auto">
                         {/* <li className="nav-item active">
                             <Link href="/">
                                 <a className="nav-link">Home <span className="sr-only">(current)</span></a>
                             </Link>
                         </li> */}
-                        <li className="nav-item">
+                        <li className="nav-item active">
                             <Link href="/posts/blog">
                                 <a className="nav-link">All Reciepes</a>
                             </Link>
