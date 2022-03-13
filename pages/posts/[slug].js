@@ -118,10 +118,10 @@ export default function Post({ post, morePosts, preview }) {
             <Comments
               post={post}
             />
-            <SectionSeparator />
+            {/* <SectionSeparator />
             {morePosts && morePosts.length > 0 && (
               <MoreStories posts={morePosts} />
-            )}
+            )} */}
           </>
         )}
       </Container>

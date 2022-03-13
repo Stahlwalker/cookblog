@@ -227,4 +227,9 @@ button#lock-button {
 a.mx-3.bg-black.border.border-black.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
     border-radius: 10px;
     text-align: center;
+    border-color: black;
+}
+
+a.hover\:underline {
+    color: black;
 }
