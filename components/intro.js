@@ -9,12 +9,14 @@ export default function Intro() {
         Stahlwalker Cookbook
       </h1>
       <div>
+        <div className="iconImage">
       {/* <ContentfulImage src="/images/starwars_egg_cropped.jpg" layout="fill" alt="" /> */}
-      <img src="/images/starwars_egg_cropped.jpg" layout="fill" alt=""></img>
+      <img src="/images/starwars_egg_cropped.jpg" layout="fill" alt="vader with egg for helmet"></img>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         May the FOOD be with you {' '} 
         <i aria-hidden className="fas fa-jedi"></i>
       </h4>
+      </div>
       <Search>
                 {/* <PostList posts={posts} /> */}
               </Search> 
