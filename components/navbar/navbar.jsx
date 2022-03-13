@@ -4,30 +4,24 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <Nav className="navbar navbar-expand-lg navbar-dark">
-            <div className="container-xl">
-                <Link href="/">
-                    <a className="navbar-brand">Stahlwalker</a>
-                </Link>
-                <Button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav className="navbar navbar-expand-lg navbar-light">
+            <div className="container-fluid">
+                <a className="navbar-brand" href="/"><i aria-hidden className="fa fa-home" style={{ fontSize: 36 }}></i></a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
-                </Button>
-
+                </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mr-auto">
-                        {/* <li className="nav-item active">
-                            <Link href="/">
-                                <a className="nav-link">Home <span className="sr-only">(current)</span></a>
-                            </Link>
-                        </li> */}
-                        <li className="nav-item active">
-                            <Link href="/posts/blog">
-                                <a className="nav-link">All Reciepes</a>
-                            </Link>
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link active" aria-current="page" href="/posts/blog">All Recipes</a>
                         </li>
+                        {/* <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li> */}
                     </ul>
                 </div>
             </div>
-        </Nav>
+        </nav>
+
     )
 }
