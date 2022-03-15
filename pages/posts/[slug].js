@@ -88,6 +88,7 @@ export default function Post({ post, morePosts, preview }) {
 
             <div className="social">
             <h2>Looks tasty, share with friends</h2>
+            <div className="social-icons">
             <FacebookShareButton
                     url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <FacebookIcon size={32} round />
@@ -114,6 +115,7 @@ export default function Post({ post, morePosts, preview }) {
                     url={`https://cookblog.vercel.app/posts/${post.slug}`} >
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>
+                  </div>
                   </div>
             <Comments
               post={post}

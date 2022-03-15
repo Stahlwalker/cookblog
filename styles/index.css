@@ -64,6 +64,10 @@ article ul {
     letter-spacing: 5px;
 }
 
+.social-icons {
+    margin-top: 10px;
+}
+
 .redditSocial circle {
     fill: #ff4500;
 }
@@ -104,6 +108,7 @@ form {
     /* width: 50%; */
     background-color: white;
     margin-top: 15px;
+    margin-left: auto;
 }
 
 input[type="search"] {
@@ -232,4 +237,12 @@ a.mx-3.bg-black.border.border-black.text-white.font-bold.py-3.px-12.lg\:px-8.dur
 
 a.hover\:underline {
     color: black;
+}
+
+/* h1.text-6xl.md\:text-8xl.font-bold.tracking-tighter.leading-tight.md\:pr-3 {
+    font-size: 80px;
+} */
+
+h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
+    padding-left: 0rem;
 }
