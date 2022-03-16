@@ -257,3 +257,19 @@ h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
 button.load-more {
     margin-top: -80px;
 }
+
+a.nav-link.active [href="/posts/blog"] {
+    display: none;
+    visibility: hidden;
+
+}
+
+/* li.nav-item [href="/posts/blog"] {
+    display: none;
+
+} */
+
+li.resultsLink {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
