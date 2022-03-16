@@ -13,7 +13,7 @@ function Hits({ searchState, searchResults }) {
         <ol>
           {searchResults.hits.map((hit) => (
             <a href={`posts/${hit.slug}`}>
-            <li key={hit.objectID}>{hit.title}</li>
+            <li className="resultsLink" key={hit.objectID}>{hit.title}</li>
             </a>
           ))}
         </ol>

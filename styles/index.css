@@ -86,9 +86,12 @@ ul {
     list-style: circle;
     font-size: 13px;
     margin-left: 2.5rem;
+    color: black;
 }
 
-
+.resultsLink:hover {
+    color: white;
+}
 
 /* .ais-SearchBox {
     margin: 1em 0;
@@ -229,20 +232,28 @@ button#lock-button {
     color: black;
 }
 
-a.mx-3.bg-black.border.border-black.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
+a.mx-1.bg-black.border.border-dark.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
     border-radius: 10px;
     text-align: center;
-    border-color: black;
+    /* border-color: black; */
 }
 
 a.hover\:underline {
     color: black;
 }
 
-/* h1.text-6xl.md\:text-8xl.font-bold.tracking-tighter.leading-tight.md\:pr-3 {
-    font-size: 80px;
-} */
-
 h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
     padding-left: 0rem;
+}
+
+.grid.grid-cols-0.md\:grid-cols-2.md\:col-gap-16.lg\:col-gap-32.row-gap-20.md\:row-gap-32.mb-32 {
+    margin-left: -50px;
+}
+
+.text-lg {
+    font-size: 1.1rem;
+}
+
+button.load-more {
+    margin-top: -80px;
 }
