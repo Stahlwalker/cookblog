@@ -12,7 +12,7 @@ import SimpleLayout from '../../components/layout/simple'
 
 export default function Blog({ preview, allPosts }) {
   const heroPost = allPosts[0]
-  const moreBlogs = allPosts.slice(1)
+  // const moreBlogs = allPosts.slice(1)
   return (
     <>
       <Layout preview={preview}>
@@ -27,20 +27,9 @@ export default function Blog({ preview, allPosts }) {
           <title>Stahlwalker Cookbook</title>
         </Head>
         <SimpleLayout></SimpleLayout>
-        <Container>
-          {/* <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )} */}
-              
-          {moreBlogs.length > 0 && <MoreBlog posts={moreBlogs} showMore={true} />}
+        <Container>     
+          {/* {moreBlogs.length > 0 && <MoreBlog posts={moreBlogs} />} */}
+          {allPosts.length > 0 && <MoreBlog posts={allPosts} showMore={false} />}
 
  
               

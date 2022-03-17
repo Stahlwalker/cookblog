@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PostPreview from '../components/post-preview'
 import Search2 from "../components/Search2";
+import Search from "../components/Search";
+import HeroPost from '../components/hero-post';
 export default function MoreBlog({ posts}) {
  
   return (
@@ -11,6 +13,7 @@ export default function MoreBlog({ posts}) {
         </Search2> 
       </h2>
       <div className="grid grid-cols-0 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+        {/* <HeroPost></HeroPost> */}
       {posts.map((post) => (
           <PostPreview
             key={post.slug}
