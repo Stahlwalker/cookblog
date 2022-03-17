@@ -8,10 +8,15 @@
 
 body {
 
-    background-color: #ffc20e;
-    background-repeat: no-repeat;
+    /* background-color: #ffc20e; */
+    /* background-color: #000e2c; */
+    /* background-color: #000e2a; */
+    background-image: url(../public/images/SpaceVoid.jpeg);
+    /* background-image: linear-gradient(to right, rgb(170, 172, 218), rgb(4, 32, 78)): */
+    background-repeat: repeat;
     background-size: cover;
-    color: #333;
+    /* color: #333; */
+    color: white;
 
     font-size: 1.2rem;
     line-height: 1.5;
@@ -43,7 +48,8 @@ article ul {
 }
 
 .tag {
-    background-color: #e7e5e0;
+    background-color: #a3cd96;
+    ;
     border-radius: 10px;
     color: #333;
     font-size: 1.2rem;
@@ -86,11 +92,12 @@ ul {
     list-style: circle;
     font-size: 13px;
     margin-left: 2.5rem;
-    color: black;
+    color: white;
 }
 
 .resultsLink:hover {
-    color: white;
+    /* color: black; */
+    color: #a3cd96;
 }
 
 /* .ais-SearchBox {
@@ -148,8 +155,10 @@ label[type="submit"]:hover {
 
 label[type="submit"]:focus,
 input[type="search"]:focus {
-    box-shadow: 0 0 3px 0 #ffc20e;
-    border-color: #ffc20e;
+    box-shadow: 0 0 3px 0 #a3cd96;
+    ;
+    border-color: #a3cd96;
+    ;
     outline: none;
     /* font-family: 'Audiowide'; */
 }
@@ -160,9 +169,9 @@ input#algolia_search {
 
 .print,
 .load-more {
-    background-color: #050505;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -205,9 +214,11 @@ button#print.checkout:hover {
 
 
 button#lock-button {
-    background-color: #050505;
+    /* background-color: #050505; */
+    background-color: white;
     border: none;
-    color: white;
+    /* color: white; */
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -229,17 +240,18 @@ button#lock-button {
 } */
 
 .navbar-dark .navbar-nav .nav-link {
-    color: black;
+    color: white;
 }
 
-a.mx-1.bg-black.border.border-dark.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
+a.mx-1.bg-white.border.border-dark.text-black.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
     border-radius: 10px;
     text-align: center;
     /* border-color: black; */
 }
 
 a.hover\:underline {
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
@@ -272,4 +284,14 @@ a.nav-link.active [href="/posts/blog"] {
 li.resultsLink {
     font-size: 13px;
     letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+
+.fa-home:before {
+    content: "\f015";
+    color: white;
 }

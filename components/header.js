@@ -9,7 +9,7 @@ export default function Header() {
       
     // </h2>
 
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-dark">
     <div className="container-fluid">
         <a className="navbar-brand" href="/"><i aria-hidden className="fa fa-home" style={{ fontSize: 36 }}></i></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
