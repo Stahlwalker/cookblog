@@ -5,9 +5,9 @@ import Link from 'next/link'
 export default function Navbar() {
     // const currentUrl = window.location.pathname;
     return (
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/"><i aria-hidden className="fa fa-home" style={{ fontSize: 36 }}></i></a>
+                <a className="navbar-brand" href="/"><i aria-hidden className="fa fa-home" style={{ color: "white", fontSize: 36 }}></i></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,7 +16,7 @@ export default function Navbar() {
                         <li className="nav-item">
                             {/* {currentUrl != '/post/blog'} */}
                             {/* <a className={currentUrl = ('/posts/blog') ? 'active-link' : 'nav-link'}></a> */}
-                            <a className="nav-link active" href="/posts/blog">All Recipes</a>
+                            <a className="nav-link active" style={{ color: "white" }} href="/posts/blog">All Recipes</a>
                         </li>
                     </ul>
                 </div>
