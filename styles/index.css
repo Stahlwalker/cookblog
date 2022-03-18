@@ -8,14 +8,10 @@
 
 body {
 
-    /* background-color: #ffc20e; */
-    /* background-color: #000e2c; */
-    /* background-color: #000e2a; */
+    background-color: #000e2c;
     background-image: url(../public/images/SpaceVoid.jpeg);
-    /* background-image: linear-gradient(to right, rgb(170, 172, 218), rgb(4, 32, 78)): */
     background-repeat: repeat;
     background-size: cover;
-    /* color: #333; */
     color: white;
 
     font-size: 1.2rem;
@@ -295,3 +291,31 @@ li.resultsLink {
     content: "\f015";
     color: white;
 }
+
+/* span.comment-count {
+    color: white;
+} */
+
+/* strong {
+    color: white;
+} */
+
+/* h3,
+h4,
+strong,
+strong a {
+    font-weight: 700;
+    color: white;
+} */
+
+/* .dsq-full-comment {
+    color: white;
+}
+
+.dsq-comment-body {
+    color: white;
+} */
+
+/* #disqus_thread {
+    color: white;
+} */
