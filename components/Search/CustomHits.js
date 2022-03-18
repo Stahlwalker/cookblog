@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 function Hits({ searchState, searchResults }) {
   const validQuery = searchState.query?.length >= 3;
-  // const { asPath } = useRouter()
+  const { asPath } = useRouter()
   // const {router} = useRouter();
   // const currentPath = router.pathname
   return (
@@ -15,8 +15,8 @@ function Hits({ searchState, searchResults }) {
       {searchResults?.hits.length > 0 && validQuery && (
         <ol>
           {searchResults.hits.map((hit) => (
-            <a href={`posts/${hit.slug}`}>
-              {/* // <a href={router == 'posts/blog' ? '<a href={`${hit.slug}`}>' : '<a href={`posts/${hit.slug}`}>'}> */}
+            // <a href={`posts/${hit.slug}`}>
+               <a key={hit.slug} href={asPath == '/posts/blog' ? hit.slug : `posts/${hit.slug}`}>
             <li className="resultsLink" key={hit.objectID}>{hit.title}</li>
             </a>
           ))}
