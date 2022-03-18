@@ -292,30 +292,40 @@ li.resultsLink {
     color: white;
 }
 
-/* span.comment-count {
-    color: white;
-} */
-
-/* strong {
-    color: white;
-} */
-
-/* h3,
-h4,
-strong,
-strong a {
-    font-weight: 700;
-    color: white;
-} */
-
-/* .dsq-full-comment {
-    color: white;
+.disqus-container {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black !important;
 }
 
-.dsq-comment-body {
-    color: white;
-} */
+@media print {
+    body {
+        background-image: none;
+        background-color: white;
+        color: black;
+    }
 
-/* #disqus_thread {
-    color: white;
-} */
+    p,
+    a,
+    ul {
+        color: black;
+    }
+
+    .post-head-image-container {
+
+        width: 200px;
+    }
+
+    .printButton,
+    .navbar,
+    .tag,
+    .wake,
+    .social,
+    .disqus-container,
+    footer {
+        display: none;
+    }
+
+}
