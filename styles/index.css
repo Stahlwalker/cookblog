@@ -92,13 +92,8 @@ ul {
 }
 
 .resultsLink:hover {
-    /* color: black; */
     color: #a3cd96;
 }
-
-/* .ais-SearchBox {
-    margin: 1em 0;
-} */
 
 .searchIcon {
     margin: 1em 0;
@@ -111,7 +106,6 @@ form {
     padding: 2px;
     border: 1px solid currentColor;
     border-radius: 25px;
-    /* width: 50%; */
     background-color: white;
     margin-top: 15px;
     margin-left: auto;
@@ -141,7 +135,6 @@ label[type="submit"] {
     border: 1px solid transparent;
     border-radius: inherit;
     background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-    /* cursor: pointer; */
     opacity: 0.7;
 }
 
@@ -171,7 +164,6 @@ input#algolia_search {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
@@ -187,14 +179,6 @@ input#algolia_search {
     margin: 0 auto 50px auto;
 }
 
-/* button#print.checkout {
-    background-color: blue;
-}
-
-button#print.checkout:hover {
-    background-color: green;
-} */
-
 .printButton {
     display: flex;
     align-items: center;
@@ -204,21 +188,17 @@ button#print.checkout:hover {
 .wake {
     display: flex;
     justify-content: center;
-    /* background-color: white; */
     margin-bottom: 20px;
 }
 
 
 button#lock-button {
-    /* background-color: #050505; */
     background-color: white;
     border: none;
-    /* color: white; */
     color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
@@ -230,11 +210,6 @@ button#lock-button {
     margin-left: 15px;
 }
 
-
-/* a.mx-3.bg-black black.border.border-black.text-white.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
-    border-radius: 10px;
-} */
-
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
@@ -242,11 +217,9 @@ button#lock-button {
 a.mx-1.bg-white.border.border-dark.text-black.font-bold.py-3.px-12.lg\:px-8.duration-200.transition-colors.mb-6.lg\:mb-0 {
     border-radius: 10px;
     text-align: center;
-    /* border-color: black; */
 }
 
 a.hover\:underline {
-    /* color: black; */
     color: white;
 }
 
@@ -271,11 +244,6 @@ a.nav-link.active [href="/posts/blog"] {
     visibility: hidden;
 
 }
-
-/* li.nav-item [href="/posts/blog"] {
-    display: none;
-
-} */
 
 li.resultsLink {
     font-size: 13px;
