@@ -5,12 +5,10 @@ import { useRouter } from 'next/router';
 function Hits({ searchState, searchResults }) {
   const validQuery = searchState.query?.length >= 3;
   const { asPath } = useRouter()
-  // const {router} = useRouter();
-  // const currentPath = router.pathname
   return (
     <>
       {searchResults?.hits.length === 0 && validQuery && (
-        <p>No results, keep cooking.</p>
+        <p>No results, keep searching.</p>
       )}
       {searchResults?.hits.length > 0 && validQuery && (
         <ol>

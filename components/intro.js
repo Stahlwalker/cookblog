@@ -1,5 +1,3 @@
-import { CMS_NAME, CMS_URL } from '../lib/constants'
-import ContentfulImage from './contentful-image'
 import Search from "../components/Search";
 
 export default function Intro() {
@@ -10,17 +8,14 @@ export default function Intro() {
       </h1>
       <div>
         <div className="iconImage">
-      {/* <ContentfulImage src="/images/starwars_egg_cropped.jpg" layout="fill" alt="" /> */}
-      {/* <img src="/images/starwars_egg_cropped.jpg" layout="fill" alt="vader with egg for helmet"></img> */}
       <img src="/images/Star_wars_Lightsaber_utensils.png" layout="fill" alt="lightsabers in the shape of utensils"></img>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         May the FOOD be with you {' '} 
         <i aria-hidden className="fas fa-jedi"></i>
       </h4>
       </div>
-      <Search>
-                {/* <PostList posts={posts} /> */}
-              </Search> 
+        <Search>
+        </Search> 
       </div>
       
     </section>
