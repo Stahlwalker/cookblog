@@ -43,7 +43,14 @@ export default function Index({ preview, allPosts }) {
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllPostsForHome(preview)) ?? []
+  const postSummaries = (await getPaginatedPostSummaries(1)) ?? []
+
+
+  //the problem is getPaginatedPostSummaries is not returning the anything
+
+  console.log(`postSummaries:${postSummaries}`)
+  const totalPages = Math.ceil(postSummaries.total / 2);
   return {
-    props: { preview, allPosts },
+    props: { preview, allPosts, postSummaries, totalPages, currentPage: "1", },
   }
 }
