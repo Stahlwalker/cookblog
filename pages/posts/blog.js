@@ -5,6 +5,9 @@ import Layout from '../../components/layout'
 import { getAllPostsForHome } from '../../lib/api'
 import Head from 'next/head'
 import SimpleLayout from '../../components/layout/simple'
+import Paginator from '../../components/paginator'
+// import Pagination from '../../components/pagination'
+// import Pagination2 from '../../components/pagination2'
 
 
 
@@ -25,8 +28,11 @@ export default function Blog({ preview, allPosts }) {
           {/* {moreBlogs.length > 0 && <MoreBlog posts={moreBlogs} />} */}
           {allPosts.length > 0 && <MoreBlog posts={allPosts} showMore={false} />}
         </Container>
+        {/* <Paginator></Paginator> */}
+        <Paginator></Paginator>
       </Layout>
     </>
+   
   )
 }
 
@@ -36,3 +42,4 @@ export async function getStaticProps({ preview = false }) {
     props: { preview, allPosts },
   }
 }
+
