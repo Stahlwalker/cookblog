@@ -43,13 +43,13 @@ export default function Meta() {
       <meta name="twitter:creator" content="@LucasStahl11" />
       <meta name="twitter:title" content="Stahlwalker Cookbook" />
       <meta name="twitter:description" content="A blog dedicated to cooking up recipes for all those far far and away." />
-      <meta property="twitter:image" content="https://cookblog.vercel.app/images/cookbook_utensils.png"/>
+      <meta property="twitter:image" content="https://cookblog.vercel.app/images/StarWarsUtensilSocial.jpg"/>
 
 
       <meta property="og:title" content="Stahlwalker Cookbook"/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://cookblog.vercel.app/"/>
-      <meta property="og:image" content="https://cookblog.vercel.app/images/cookbook_utensils.png"/>
+      <meta property="og:image" content="https://cookblog.vercel.app/images/StarWarsUtensilSocial.jpg"/>
       {/* <meta property="og:site_name" content="Stahlwalker"/> */}
       <meta property="fb:app_id" content="511134710437125"/>
       <meta property="og:description" content="A blog dedicated to cooking up recipes for all those far far and away."/>
