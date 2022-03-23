@@ -297,3 +297,10 @@ li.resultsLink {
     }
 
 }
+
+::marker {
+    /* color: #f0b1b4; */
+    /* color: #a3cd96; */
+    /* color: #b2d4f3; */
+    color: #ffd307;
+}
