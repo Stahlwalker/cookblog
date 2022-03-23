@@ -8,10 +8,10 @@
 
 body {
 
-    background-color: #000e2c;
-    background-image: url(../public/images/SpaceVoid.jpeg);
+    background-color: #0d0d1d;
+    background-image: url(../public/images/spacedark.jpeg);
     background-repeat: repeat;
-    background-size: cover;
+    /* background-size: cover; */
     color: white;
 
     font-size: 1.2rem;
