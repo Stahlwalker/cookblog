@@ -220,7 +220,8 @@ a.mx-1.bg-white.border.border-dark.text-black.font-bold.py-3.px-12.lg\:px-8.dura
 }
 
 a.hover\:underline {
-    color: white;
+    /* color: white; */
+    color: #ffd307;
 }
 
 h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
@@ -302,5 +303,10 @@ li.resultsLink {
     /* color: #f0b1b4; */
     /* color: #a3cd96; */
     /* color: #b2d4f3; */
+    color: #ffd307;
+}
+
+h1,
+h2 {
     color: #ffd307;
 }
