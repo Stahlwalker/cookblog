@@ -1,6 +1,5 @@
 import ContentfulImage from './contentful-image'
 import Link from 'next/link'
-import cn from 'classnames'
 
 export default function CoverImage({ title, url, slug }) {
   const image = (
