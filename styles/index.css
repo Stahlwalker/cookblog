@@ -300,13 +300,13 @@ li.resultsLink {
 }
 
 ::marker {
-    /* color: #f0b1b4; */
-    /* color: #a3cd96; */
-    /* color: #b2d4f3; */
     color: #ffd307;
 }
 
-h1,
-h2 {
+h1 {
     color: #ffd307;
+}
+
+h2 {
+    color: #b2d4f3;
 }
