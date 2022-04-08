@@ -29,6 +29,7 @@
     "react-dom": "^17.0.2",
     "react-instantsearch-dom": "^6.22.0",
     "react-screen-wake-lock": "^1.1.10",
+    "react-pagination": "^1.0.0",
     "react-to-print": "^2.14.4"
   },
   "devDependencies": {
