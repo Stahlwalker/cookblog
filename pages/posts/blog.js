@@ -5,14 +5,21 @@ import Layout from '../../components/layout'
 import { getAllPostsForHome } from '../../lib/api'
 import Head from 'next/head'
 import SimpleLayout from '../../components/layout/simple'
-import Paginator from '../../components/paginator'
-// import Pagination from '../../components/pagination'
-// import Pagination2 from '../../components/pagination2'
+import Pagination from '../../components/pagination'
+import React, { useState, useMemo } from 'react';
 
+let PageSize = 10;
 
 
 export default function Blog({ preview, allPosts }) {
   const heroPost = allPosts[0]
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const currentBlogListData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return allPosts.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
   return (
     <>
       <Layout preview={preview}>
@@ -26,10 +33,16 @@ export default function Blog({ preview, allPosts }) {
         <SimpleLayout></SimpleLayout>
         <Container>     
           {/* {moreBlogs.length > 0 && <MoreBlog posts={moreBlogs} />} */}
-          {allPosts.length > 0 && <MoreBlog posts={allPosts} showMore={false} />}
+          {allPosts.length > 0 && <MoreBlog posts={currentBlogListData} showMore={false} />}
+          <Pagination
+          className="pagination-bar"
+          currentPage={currentPage}
+          totalCount={allPosts.length}
+          pageSize={PageSize}
+          onPageChange={page => setCurrentPage(page)}
+        />
         </Container>
-        {/* <Paginator></Paginator> */}
-        <Paginator></Paginator>
+        
       </Layout>
     </>
    

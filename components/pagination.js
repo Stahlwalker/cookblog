@@ -1,43 +1,74 @@
-import {
-    withPagination,
-    getPagination,
-    hasPreviousPage,
-    hasNextPage,
-  } from 'next-api-paginate';
-//   import { Post } from '~/db/models/Post';
-import { getAllPostsForHome } from '../lib/api'
-  
-  export default withPagination({
-    defaultLimit: 15,
-    maxLimit: 40,
-  })(async (req, res) => {
-    const { page, limit } = getPagination(req);
-    const offset = page * limit - limit;
-  
-    try {
-      const { rows, count } = await getAllPostsForHome.findAndCountAll({
-        limit,
-        offset,
-      });
-  
-      const pageCount = Math.ceil(count / limit);
-  
-      return res.json({
-        ok: true,
-        getAllPostsForHome: rows,
-        pagination: {
-          page,
-          limit,
-          pageCount,
-          itemCount: count,
-          hasPrevious: hasPreviousPage(req),
-          hasNext: hasNextPage(req)(count),
-        },
-      });
-    } catch (err) {
-      console.error(err);
-      return res.status(500).json({
-        ok: false,
-      });
-    }
+import React from 'react';
+import classnames from 'classnames';
+import { usePagination, DOTS } from '../lib/usePagination';
+const Pagination = props => {
+  const {
+    onPageChange,
+    totalCount,
+    siblingCount = 1,
+    currentPage,
+    pageSize,
+    className
+  } = props;
+
+  const paginationRange = usePagination({
+    currentPage,
+    totalCount,
+    siblingCount,
+    pageSize
   });
+
+  if (currentPage === 0 || paginationRange.length < 2) {
+    return null;
+  }
+
+  const onNext = () => {
+    onPageChange(currentPage + 1);
+  };
+
+  const onPrevious = () => {
+    onPageChange(currentPage - 1);
+  };
+
+  let lastPage = paginationRange[paginationRange.length - 1];
+  return (
+    <ul
+      className={classnames('pagination-container', { [className]: className })}
+    >
+      <li
+        className={classnames('pagination-item', {
+          disabled: currentPage === 1
+        })}
+        onClick={onPrevious}
+      >
+        <div className="arrow left" />
+      </li>
+      {paginationRange.map(pageNumber => {
+        if (pageNumber === DOTS) {
+          return <li className="pagination-item dots">&#8230;</li>;
+        }
+
+        return (
+          <li
+            className={classnames('pagination-item', {
+              selected: pageNumber === currentPage
+            })}
+            onClick={() => onPageChange(pageNumber)}
+          >
+            {pageNumber}
+          </li>
+        );
+      })}
+      <li
+        className={classnames('pagination-item', {
+          disabled: currentPage === lastPage
+        })}
+        onClick={onNext}
+      >
+        <div className="arrow right" />
+      </li>
+    </ul>
+  );
+};
+
+export default Pagination;
