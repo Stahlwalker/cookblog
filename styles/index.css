@@ -228,10 +228,6 @@ h4.text-center.md\:text-left.text-lg.mt-5.md\:pl-8 {
     padding-left: 0rem;
 }
 
-.grid.grid-cols-0.md\:grid-cols-2.md\:col-gap-16.lg\:col-gap-32.row-gap-20.md\:row-gap-32.mb-32 {
-    margin-left: -50px;
-}
-
 .text-lg {
     font-size: 1.1rem;
 }
@@ -384,4 +380,8 @@ h2 {
         padding: 1rem;
     }
     
+}
+
+a:active {
+    color: #b2d4f3
 }
