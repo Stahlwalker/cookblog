@@ -382,6 +382,6 @@ h2 {
     
 }
 
-a:active {
+a:active, a:hover {
     color: #b2d4f3
 }
