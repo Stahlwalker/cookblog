@@ -392,10 +392,13 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait){
     section.flex-col.md\:flex-row.flex.items-center.md\:justify-between.mt-8.mb-16.md\:mb-6 {
-        flex-direction: column;
+        flex-direction: row;
+    }
+    h1.text-6xl.md\:text-8xl.font-bold.tracking-tighter.leading-tight.md\:pr-3  {
+        font-size: 4.75rem;
     }
     .iconImage {
-        width: 50%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
     }
