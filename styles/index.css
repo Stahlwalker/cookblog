@@ -4,22 +4,24 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
-
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 body {
-
     background-color: #0d0d1d;
     background-image: url(../public/images/spacedark.jpeg);
     background-repeat: repeat;
     /* background-size: cover; */
     color: white;
-
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 960px;
+    /* max-width: 960px; */
     padding: 1.5rem;
     font-family: 'Audiowide';
+    position: relative;
 }
 
 .blog-preview-image {
@@ -410,5 +412,48 @@ and (orientation : portrait){
     .md\:grid.md\:grid-cols-2.md\:col-gap-16.lg\:col-gap-8.mb-20.md\:mb-28  {
         display: flow-root;
     }
+    .nav-icon-contatiner {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+
 }
+
+/* @media (prefers-color-scheme: dark) {
+    .main { background:  red; }
+  } */
+ 
+
+  /* @media (prefers-color-scheme: light) {
+    body { 
+        background-image: url(../public/images/spacelight.png);
+        color: black;
+         }
+  } */
+
+  @media screen and (max-width: 786px) {
+    .nav-icon-contatiner {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+    }
+      
+  }
+
+  .light-mode {
+    background-image: url(../public/images/spacelight.png);
+    color: black;
+  }
+  
+  .light-mode .resultsLink {
+    color: black;
+  }
+
+  .light-mode .resultsLink:hover {
+    color: white;
+  }
+  
+ 
+
 
