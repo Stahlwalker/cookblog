@@ -3,14 +3,16 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPostsForHome } from '../lib/api'
+import { getAllPostsForHome, getFeaturedPost } from '../lib/api'
 import Head from 'next/head'
 import SimpleLayout from '../components/layout/simple'
 
 
-export default function Index({ preview, allPosts }) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+export default function Index({ preview, allPosts, featuredPost }) {
+  // Use featured post if available, otherwise fall back to most recent post
+  const heroPost = featuredPost || allPosts[0]
+  // Filter out the hero post from the more posts list to avoid duplication
+  const morePosts = allPosts.filter(post => post.slug !== heroPost?.slug)
   return (
     <>
       <Layout preview={preview}>
@@ -43,7 +45,8 @@ export default function Index({ preview, allPosts }) {
 
 export async function getStaticProps({ preview = false }) {
   const allPosts = (await getAllPostsForHome(preview)) ?? []
+  const featuredPost = await getFeaturedPost(preview)
   return {
-    props: { preview, allPosts },
+    props: { preview, allPosts, featuredPost },
   }
 }
