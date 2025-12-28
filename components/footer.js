@@ -10,7 +10,7 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
             <a
-              href="https://lucasstahl.com/"
+              href="https://lukestahl.io/"
               className="mx-1 bg-white border border-dark text-black font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
             >
               Learn More
