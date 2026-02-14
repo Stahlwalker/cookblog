@@ -19,7 +19,6 @@ import {
   FacebookIcon,
   PinterestShareButton,
   TwitterShareButton,
-  TwitterIcon,
   PinterestIcon,
   RedditShareButton,
   RedditIcon,
@@ -85,8 +84,23 @@ export default function Post({ post, morePosts, preview }) {
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
                   <TwitterShareButton
-                    url={`https://cookblog.vercel.app/posts/${post.slug}`} >
-                    <TwitterIcon size={32} round />
+                    url={`https://cookblog.vercel.app/posts/${post.slug}`}
+                    style={{ display: 'inline-block', verticalAlign: 'top' }} >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="#000000"
+                      viewBox="0 0 32 32"
+                      style={{
+                        backgroundColor: '#000000',
+                        borderRadius: '50%',
+                        padding: '7px',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <path fill="#ffffff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
                   </TwitterShareButton>
                   <div className="redditSocial">
                   <RedditShareButton
